@@ -1,0 +1,118 @@
+/*******    HEADER   ************/
+
+.header{
+    height: 759px;
+    width: 100%;
+    background-color: #837161;
+    background: url('../img/header-bg1.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    
+}
+
+.header__nav-row{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding-top: 100px;*/
+    
+}
+.header__logo {}
+.main-logo {}
+
+.header__nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header__nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__button{
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 25px;
+    padding-bottom:25px;
+    background-color: #004cff; 
+
+    color: #ffffff;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height:23px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+
+    transition: background-color 0.2s ease-in;
+    
+    display: flex;
+  
+}
+.header__button:hover{
+    background-color: rgb(13, 53, 138);
+}
+
+.header__nav {
+    display: flex;
+}
+.header__navlink {
+    color: #404040;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    background: url("../img/icons/dot.svg") right 45% no-repeat;
+    margin-right: 25px;
+    padding-right: 25px;
+}
+.header__navlink:hover{
+    color: #004cff;
+}
+.header__navlink:active{
+    color:rgb(0, 76, 255) ;
+    text-decoration: underline;
+}
+.header__navlink_last{
+    background: none;
+}
+.header__promo {
+    max-width: 400px;
+    margin-top: 153px;
+}
+.header__title {
+    color: #ffffff;
+    font-family: Teko;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 2.73px;
+    margin-bottom: 64px;
+}
+.header__promo-btn {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 6px solid rgb(255, 255, 255);
+    padding: 25px 48px 25px 48px;
+    margin-right: 131px;
+    transition: background-color 0.2s ease-in;
+    /*height: 61px;*/
+}
+
+
+.header__promo-btn:hover{
+    border: 6px solid #170501;
+    color: #170501;
+}
+
+

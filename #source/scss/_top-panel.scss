@@ -1,0 +1,42 @@
+/*******  TOP-PANEL **********/
+.top-panel{
+    width: 100%;
+    height: 78px;
+    background-color:#262626;
+    color: #f8f8f8;
+}
+
+.container{/*контейнер1 по ширині*/
+    max-width: 1060px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.container2{/*контейнер2 по ширині*/
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.top-panel__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /*background-color: #cf5910;*/
+}
+.top-panel__notification{
+    font-size: 12px;
+    font-weight: 500;
+}
+.top-panel__icons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-panel__link:not(:last-child){
+    margin-right: 28px;
+}
+/*********************************/
+
+
