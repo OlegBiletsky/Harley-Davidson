@@ -100,8 +100,12 @@ body {
   /*background-color: #cf5910;*/ }
 
 .top-panel__notification {
-  font-size: 12px;
+  font-size: 11px;
+  margin-right: 15px;
   font-weight: 500; }
+  @media (min-width: 780px) {
+    .top-panel__notification {
+      font-size: 12px; } }
 
 .top-panel__icons {
   height: 100%;
