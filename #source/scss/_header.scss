@@ -35,6 +35,10 @@
     align-items: center;
 }
 .header__button{
+    display: none;
+
+    @media (min-width: 980px) {
+    display: flex;
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 25px;
@@ -51,15 +55,21 @@
 
     transition: background-color 0.2s ease-in;
     
-    display: flex;
-  
+    }
+
 }
+
 .header__button:hover{
     background-color: rgb(13, 53, 138);
 }
 
 .header__nav {
-    display: flex;
+    display: none;
+
+
+    @media (min-width: 980px) {
+        display: flex;
+    }
 }
 .header__navlink {
     color: #404040;
@@ -87,13 +97,23 @@
     margin-top: 153px;
 }
 .header__title {
+
     color: #ffffff;
     font-family: Teko;
-    font-size: 62px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 68px;
     letter-spacing: 2.73px;
     margin-bottom: 64px;
+
+    @media (min-width: 480px){
+        font-size: 52px;
+    }
+
+    @media (min-width: 980px){
+        font-size: 68px;
+    }
+
 }
 .header__promo-btn {
     color: rgb(255, 255, 255);
