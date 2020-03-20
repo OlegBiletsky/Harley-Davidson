@@ -144,6 +144,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   /*padding-top: 100px;*/ }
+  @media (max-width: 980) {
+    .header__nav-row {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
 
 .header__nav {
   height: 100%;
@@ -257,10 +262,98 @@ body {
   -o-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
   /*height: 61px;*/ }
+  @media (max-width: 980px) {
+    .header__promo-btn {
+      padding: 12px 14px 12px 14px;
+      font-size: 16px;
+      font-weight: 600;
+      border: 4px solid white; } }
+  @media (max-width: 480px) {
+    .header__promo-btn {
+      font-size: 10px; } }
 
 .header__promo-btn:hover {
   border: 6px solid #170501;
   color: #170501; }
+
+@media (min-width: 980px) {
+  .header__nav-button {
+    display: none; } }
+
+.menu-icon-wrapper {
+  /*   background-color: red; */
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: #004cff; }
+
+.menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #004cff;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
+
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #004cff;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
+
+.menu-icon.menu-icon-active {
+  background-color: transparent; }
+
+.menu-icon.menu-icon-active::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
+
+.menu-icon.menu-icon-active::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
 
 /******** Топ - продажі ********/
 .top-info {
