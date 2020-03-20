@@ -8,6 +8,7 @@
     background-size: cover;
     background-position: 50%;
     
+    
 }
 
 .header__nav-row{
@@ -16,6 +17,12 @@
     justify-content: space-between;
     align-items: center;
     /*padding-top: 100px;*/
+
+    @media (max-width: 980) {
+        align-items: flex-start;
+    }
+
+
     
 }
 .header__logo {}
@@ -35,6 +42,10 @@
     align-items: center;
 }
 .header__button{
+    display: none;
+
+    @media (min-width: 980px) {
+    display: flex;
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 25px;
@@ -51,15 +62,21 @@
 
     transition: background-color 0.2s ease-in;
     
-    display: flex;
-  
+    }
+
 }
+
 .header__button:hover{
     background-color: rgb(13, 53, 138);
 }
 
 .header__nav {
-    display: flex;
+    display: none;
+
+
+    @media (min-width: 980px) {
+        display: flex;
+    }
 }
 .header__navlink {
     color: #404040;
@@ -87,13 +104,23 @@
     margin-top: 153px;
 }
 .header__title {
+
     color: #ffffff;
     font-family: Teko;
-    font-size: 62px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 68px;
     letter-spacing: 2.73px;
     margin-bottom: 64px;
+
+    @media (min-width: 480px){
+        font-size: 52px;
+    }
+
+    @media (min-width: 980px){
+        font-size: 68px;
+    }
+
 }
 .header__promo-btn {
     color: rgb(255, 255, 255);
@@ -107,6 +134,20 @@
     margin-right: 131px;
     transition: background-color 0.2s ease-in;
     /*height: 61px;*/
+
+    @media (max-width: 980px){
+        padding: 12px 14px 12px 14px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 4px solid rgb(255, 255, 255);
+    }
+
+    @media (max-width: 480px){
+        font-size: 10px;
+
+    }
+    
+    
 }
 
 
@@ -115,4 +156,8 @@
     color: #170501;
 }
 
-
+.header__nav-button {
+    @media (min-width: 980px) {
+        display: none;
+    }
+}
