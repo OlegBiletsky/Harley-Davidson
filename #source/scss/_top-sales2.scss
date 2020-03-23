@@ -8,10 +8,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .top-sales-wrapper__item {
     margin-bottom: 22px;
-    margin-top: 105px;
+    margin-top: 60px;
+    width: 600px;
+    height: 500px;
 }
 /*
 .top2-sale-foto {
