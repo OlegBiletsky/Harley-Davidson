@@ -359,6 +359,9 @@ body {
 .top-info {
   padding-top: 44px;
   padding-bottom: 30px; }
+  @media (max-width: 740px) {
+    .top-info {
+      display: none; } }
 
 .container2 {
   max-width: 1350px;
@@ -368,12 +371,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px; }
+  @media (max-width: 1189px) {
+    .top-info__row {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 0px; } }
 
 .info {
   /*вузьке фото*/
@@ -382,10 +390,23 @@ body {
   height: 400px;
   margin-right: 22px;
   margin-left: 22px; }
+  @media (max-width: 1290px) {
+    .info {
+      width: 400px; } }
+  @media (max-width: 1189px) {
+    .info {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 15px;
+      margin-bottom: 15px; } }
 
 .info--wide {
   /*широке фото*/
   width: 775px; }
+  @media (max-width: 1290px) {
+    .info--wide {
+      width: 700px; } }
 
 .info__img {
   /*display: none;*/
@@ -458,6 +479,9 @@ body {
   font-weight: 700;
   line-height: 70.5px;
   text-transform: uppercase; }
+  @media (max-width: 1290px) {
+    .info--wide .info__content-discount {
+      bottom: 45px; } }
 
 .info__content-discount span {
   font-size: 43px;

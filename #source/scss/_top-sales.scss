@@ -2,6 +2,9 @@
 .top-info {
     padding-top: 44px;
     padding-bottom: 30px;
+    @media (max-width:740px){
+        display: none;
+    }
 }
 .container2{
     max-width: 1350px;
@@ -11,9 +14,15 @@
 
 .top-info__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    @media (max-width: 1189px) {
+        justify-content: center;
+     
+        margin-bottom: 0px;
+          
+     }
 }
 
 .info {/*вузьке фото*/
@@ -22,12 +31,27 @@
     height: 400px;
     margin-right: 22px;
     margin-left: 22px;
-    
+
+    @media (max-width: 1290px) {
+        width: 400px;
+    }
+
+    @media (max-width: 1189px) {
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+          
+     }
 }
 
 
 .info--wide{/*широке фото*/
     width: 775px;
+    
+
+    @media (max-width: 1290px) {
+        width: 700px;
+    }
 }
 
 
@@ -98,6 +122,8 @@
     line-height: 70.5px;
     text-transform: uppercase;
 
+    
+
 }
 
 .info--wide .info__content-discount {
@@ -109,6 +135,10 @@
     font-weight: 700;
     line-height: 70.5px;
     text-transform: uppercase;
+    @media (max-width:1290px) {
+        bottom: 45px;
+        
+    }
 
 }
 
