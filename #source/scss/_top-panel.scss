@@ -14,6 +14,7 @@
     height: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 .top-panel__row{
     display: flex;
@@ -23,10 +24,11 @@
     
 }
 .top-panel__notification{
+    color: white;
     font-size: 11px;
     margin-right: 15px;
     font-weight: 500;
-    @media screen and (max-width: 487px) {
+    @media screen and (max-width: 490px) {
         display: none;
     }
 }
@@ -35,7 +37,7 @@
     align-items: center;
     color: rgb(255, 255, 255);
     font-size: 24px;
-    @media screen and (max-width: 487px) {
+    @media screen and (max-width: 490px) {
         display: block;
     }
 }
