@@ -4,6 +4,9 @@
     height: 78px;
     background-color:#262626;
     color: #f8f8f8;
+    @media screen and (max-width: 487px) {
+        height: 70px;
+    }
 }
 .container1{/*контейнер1 по ширині*/
     max-width: 1090px;
@@ -17,11 +20,24 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    
 }
 .top-panel__notification{
     font-size: 11px;
     margin-right: 15px;
     font-weight: 500;
+    @media screen and (max-width: 487px) {
+        display: none;
+    }
+}
+.top-panel__notification-icon{
+    display: none;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    @media screen and (max-width: 487px) {
+        display: block;
+    }
 }
 .top-panel__icons{
     height: 100%;
@@ -30,8 +46,18 @@
     justify-content: space-between;
 }
 .top-panel__link:not(:last-child){
-    margin-right: 28px;
+    margin-right: 30px;
+    @media screen and (max-width: 487px) {
+        margin-right: 50px;
+    }
 }
+
+
+
+
+
+
+
 /*********************************/
 
 

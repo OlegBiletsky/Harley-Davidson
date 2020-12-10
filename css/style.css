@@ -72,6 +72,9 @@ body {
   height: 78px;
   background-color: #262626;
   color: #f8f8f8; }
+  @media screen and (max-width: 487px) {
+    .top-panel {
+      height: 70px; } }
 
 .container1 {
   /*контейнер1 по ширині*/
@@ -97,6 +100,20 @@ body {
   font-size: 11px;
   margin-right: 15px;
   font-weight: 500; }
+  @media screen and (max-width: 487px) {
+    .top-panel__notification {
+      display: none; } }
+
+.top-panel__notification-icon {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 24px; }
+  @media screen and (max-width: 487px) {
+    .top-panel__notification-icon {
+      display: block; } }
 
 .top-panel__icons {
   height: 100%;
@@ -111,7 +128,10 @@ body {
           justify-content: space-between; }
 
 .top-panel__link:not(:last-child) {
-  margin-right: 28px; }
+  margin-right: 30px; }
+  @media screen and (max-width: 487px) {
+    .top-panel__link:not(:last-child) {
+      margin-right: 50px; } }
 
 /*********************************/
 /*******    HEADER   ************/
@@ -270,81 +290,6 @@ body {
 @media (min-width: 980px) {
   .header__nav-button {
     display: none; } }
-
-.menu-icon-wrapper {
-  /*   background-color: red; */
-  height: 30px;
-  width: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.menu-icon {
-  position: relative;
-  width: 30px;
-  height: 5px;
-  background-color: #004cff; }
-
-.menu-icon::before {
-  position: absolute;
-  left: 0;
-  top: -10px;
-  content: '';
-  display: block;
-  width: 30px;
-  height: 5px;
-  background-color: #004cff;
-  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
-
-.menu-icon::after {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  content: '';
-  display: block;
-  width: 30px;
-  height: 5px;
-  background-color: #004cff;
-  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
-  -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in; }
-
-.menu-icon.menu-icon-active {
-  background-color: transparent; }
-
-.menu-icon.menu-icon-active::before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 0;
-  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-  -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
-
-.menu-icon.menu-icon-active::after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 0;
-  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
-  -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
 
 /******** Топ - продажі ********/
 .top-info {
@@ -685,7 +630,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 900px; }
+  max-width: 900px; }
 
 .subscribe-input {
   background-color: #ffffff;
