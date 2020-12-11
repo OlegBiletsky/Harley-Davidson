@@ -805,9 +805,6 @@ body {
 
 /********************************/
 /********** Subscribe  ***********/
-.subscribe-wrapper {
-  display: none; }
-
 .subscribe {
   position: relative;
   height: 550px;
