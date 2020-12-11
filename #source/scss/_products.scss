@@ -1,10 +1,6 @@
 /***********Продукти*************/
-
 .products {}
 .products-wrapper {}
-
-
-
 .products-wrapper-header {
    text-align: center;
 }
@@ -17,23 +13,14 @@
     text-transform: uppercase;
     margin-bottom: 59px;
     margin-top: 60px;
-    @media (max-width:740px){
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    @media (max-width:510px){
-        font-size: 40px;
-    }
+
 }
 .products-wrapper__nav {
     display: flex;
     justify-content: center;
     position: relative;
     margin-bottom: 100px;
-     @media (max-width:740px){
-        margin-top: 50px;
-        margin-bottom: 80px;
-    }
+
 }
 .products-wrapper__nav::after{
     content: '';
@@ -45,19 +32,7 @@
     /*left: 50%;*/
     margin: 0 0 0 0px;
     
-    // @media (max-width:1042px){
-    //     width: 900px;
-    // }
-    // @media (max-width:915px){
-    //     width: 800px;
-    // }
-    // @media (max-width:740px){
-    //     width: 700px;
-    // }
 
-    // @media (max-width:705px){
-    //     width: 600px;
-    // }
 }
 .products-wrapper__link{
     display: flex;
@@ -70,12 +45,7 @@
     line-height: 24.75px;
     margin-right: 45px; 
     transition: opacity 0.2s ease-in;
-    @media (max-width:510px){
-        font-size: 16px;
-    }
-    @media (max-width:430px){
-        
-    }
+
 }
 
 
@@ -97,7 +67,7 @@
 }
 .products-column {
     max-width: 338px;
-    background-color: #fff;
+    background-color: #ffffff;
     color: #232323;
     text-align: center;
     margin-bottom: 25px;
