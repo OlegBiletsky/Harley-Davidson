@@ -74,9 +74,6 @@ body {
   background-color: #262626;
   color: #f8f8f8;
   opacity: 0.5; }
-  @media screen and (max-width: 487px) {
-    .top-panel {
-      height: 70px; } }
 
 .top-panel:hover {
   opacity: 1; }
@@ -123,6 +120,7 @@ body {
 
 .top-panel__icons {
   height: 100%;
+  margin-right: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,7 +323,7 @@ body {
 /***********************************************/
 /************ MENU STYLES *************/
 :root {
-  --primary-color: rgba(110, 94, 80, 0.979);
+  --primary-color: #262626;
   --overlay-color: rgba(70, 74, 77, 0.979);
   --menu-speed: 0.75s; }
 
@@ -335,8 +333,8 @@ body {
     .menu-wrap {
       display: block;
       position: fixed;
-      top: 100px;
-      right: 250px;
+      top: 10px;
+      right: 70px;
       z-index: 1; } }
 
 .menu-wrap .toggler {

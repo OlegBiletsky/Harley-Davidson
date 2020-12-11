@@ -1,6 +1,6 @@
 /************ MENU STYLES *************/
 :root {
-    --primary-color: rgba(110, 94, 80, 0.979);;
+    --primary-color: #262626;
     --overlay-color: rgba(70, 74, 77, 0.979);
     --menu-speed: 0.75s;
 }
@@ -10,9 +10,9 @@
     @media screen and (max-width: 980px) {
         display: block;
         position: fixed;
-        top: 100px;
+        top: 10px;
         // left: 0;
-        right: 250px;
+        right: 70px;
         z-index: 1;
     }
 }
