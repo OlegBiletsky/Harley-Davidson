@@ -516,6 +516,7 @@ body {
 /**********************************************/
 /********  Top-sales 1 ********/
 .top-sales {
+  display: none;
   padding-top: 44px;
   padding-bottom: 30px; }
   @media screen and (max-width: 740px) {
@@ -775,6 +776,9 @@ body {
 
 /********************************/
 /******** Топ-продажі  2 *********/
+.top-sales {
+  display: none; }
+
 .top-sales-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,6 +814,9 @@ body {
   height: 550px;
   margin-top: 20px;
   margin-bottom: 20px; }
+  @media screen and (max-width: 800px) {
+    .subscribe {
+      height: 300px; } }
 
 .subscribe-img {
   width: 100%;
@@ -848,12 +855,37 @@ body {
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 100px; }
+  @media screen and (max-width: 1160px) {
+    .subscribe_title {
+      font-size: 90px;
+      margin-bottom: 80px; } }
+  @media screen and (max-width: 980px) {
+    .subscribe_title {
+      font-size: 80px;
+      margin-bottom: 60px; } }
+  @media screen and (max-width: 800px) {
+    .subscribe_title {
+      font-size: 70px;
+      margin-bottom: 40px; } }
+  @media screen and (max-width: 520px) {
+    .subscribe_title {
+      font-size: 45px;
+      margin-bottom: 35px; } }
 
 .subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 900px; }
+  @media screen and (max-width: 800px) {
+    .subscribe-form {
+      max-width: 650px; } }
+  @media screen and (max-width: 750px) {
+    .subscribe-form {
+      max-width: 500px; } }
+  @media screen and (max-width: 520px) {
+    .subscribe-form {
+      max-width: 345px; } }
 
 .subscribe-input {
   background-color: #ffffff;
@@ -869,6 +901,21 @@ body {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2; }
+  @media screen and (max-width: 800px) {
+    .subscribe-input {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media screen and (max-width: 750px) {
+    .subscribe-input {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 400px; } }
+  @media screen and (max-width: 520px) {
+    .subscribe-input {
+      padding-left: 10px;
+      padding-right: 10px;
+      max-width: 250px;
+      height: 42px; } }
 
 .subscribe-button {
   width: 180px;
@@ -886,6 +933,21 @@ body {
   -webkit-transition: background-color 0.2s ease;
   -o-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease; }
+  @media screen and (max-width: 800px) {
+    .subscribe-button {
+      width: 100px;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 1px; } }
+  @media screen and (max-width: 750px) {
+    .subscribe-button {
+      max-width: 90px; } }
+  @media screen and (max-width: 520px) {
+    .subscribe-button {
+      max-width: 70px;
+      font-size: 12px;
+      font-weight: 600;
+      height: 42px; } }
 
 .subscribe-button:hover {
   background-color: #3c74f7; }
@@ -1014,7 +1076,8 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  display: none; }
 
 .gallery__item {
   width: 33.33333333%;

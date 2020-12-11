@@ -2,6 +2,8 @@
 .gallery {
     display: flex;
     justify-content: space-between;
+
+    display: none;
 }
 
 .gallery__item {
