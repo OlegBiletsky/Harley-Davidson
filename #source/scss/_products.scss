@@ -13,6 +13,9 @@
     text-transform: uppercase;
     margin-bottom: 59px;
     margin-top: 60px;
+    @media screen and (max-width: 950px) {
+        margin-bottom: 39px;
+    }
 
 }
 .products-wrapper__nav {
@@ -20,17 +23,22 @@
     justify-content: center;
     position: relative;
     margin-bottom: 100px;
+    @media screen and (max-width: 950px) {
+        margin-bottom: 60px;
+    }
 
 }
 .products-wrapper__nav::after{
     content: '';
     position: absolute;
-    max-width: 1042px;
+    width: 500px;
     height: 1px;
     border: 1px solid #b2b2b2;
     bottom: -40px;
-    /*left: 50%;*/
     margin: 0 0 0 0px;
+    @media screen and (max-width: 950px) {
+        bottom: -20px;
+    }
     
 
 }
@@ -61,9 +69,18 @@
 
 .products-wrapper-body {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap ;
+    justify-content: space-between;
+    flex-wrap:wrap;
     margin: 0 auto;
+    @media screen and (max-width: 1130px) {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
 }
 .products-column {
     max-width: 338px;
@@ -72,6 +89,9 @@
     text-align: center;
     margin-bottom: 25px;
     transition: opacity 0.2s ease-in;
+    @media screen and (max-width: 950px) {
+        max-width: 500px;
+    }
     
 }
 .products-column:hover{
@@ -80,6 +100,15 @@
 }
 .products-column__foto {
     padding: 48px 45px 79px 45px;
+    @media screen and (max-width: 1130px) {
+        padding: 20px 15px 10px 15px;
+    }
+    @media screen and (max-width: 950px) {
+        padding: 48px 100px 79px 100px;
+    }
+    @media screen and (max-width: 510px) {
+        padding: 20px 15px 10px 15px;
+    }
 }
 .products-column__notification {
     color: #262626;
@@ -88,6 +117,16 @@
     font-size: 21px;
     line-height: 24.75px;
     padding: 0 0 27px 0;
+    @media screen and (max-width: 1130px) {
+        padding-bottom: 5px;
+    }
+    @media screen and (max-width: 950px) {
+        padding-bottom: 25px;
+    }
+    @media screen and (max-width: 510px) {
+        padding-bottom: 5px;
+    }
+
 }
 .products-column__price {
     color: #004cff;
@@ -96,6 +135,15 @@
     font-weight: 700;
     line-height: 38.25px;
     padding-bottom: 29px;
+    @media screen and (max-width: 1130px) {
+        padding-bottom: 5px;
+    }
+    @media screen and (max-width: 950px) {
+        padding-bottom: 25px;
+    }
+    @media screen and (max-width: 510px) {
+        padding-bottom: 5px;
+    }
 }
 /********************************/
 
