@@ -139,5 +139,58 @@
 /********************************/
 
 
-
-
+.row {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.img {
+    height: 50%;
+    margin: 10px;
+    box-shadow: 10px 14px 20px 0px rgba(226,204,189,1);
+}
+.img-1{
+    background: url('../img/body_foto4.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    
+  }
+  .img-2{
+    background: url('../img/body_foto2.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .img-3{
+    background: url('../img/body_foto3.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    
+  }
+  .img-4 {
+    background: url('../img/body_foto4.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  @media screen and (min-width: 800px) {
+    .row{
+      height: 950px; 
+      margin: auto;
+    }
+    
+    .img{
+      height: 50%;  
+    }
+    
+    .img-2,
+    .img-3 {
+      width: 24%;
+    }
+    .img-1,
+    .img-4 {
+      width: 70%;
+    }
+  }
