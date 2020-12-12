@@ -1156,8 +1156,7 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: none; }
+          justify-content: space-between; }
 
 .gallery__item {
   width: 33.33333333%;

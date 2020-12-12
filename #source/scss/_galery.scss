@@ -2,8 +2,6 @@
 .gallery {
     display: flex;
     justify-content: space-between;
-
-    display: none;
 }
 
 .gallery__item {
@@ -11,7 +9,6 @@
     height: auto;
     object-fit: cover;
     object-position: center;
-
 }
 
 /********************************/
