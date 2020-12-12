@@ -6,7 +6,6 @@
 
 /*********** Products *************/
 
-
 /********** Subscribe  **********/
 
 /********** Services **************/
@@ -14,3 +13,13 @@
 /*********** Galery ***************/
 
 /************** FOOTER ************/
+
+
+
+container1 - max-width: 1090px;
+container1 - max-width: 1350px;
+
+1450px MAX RESPONS.
+
+font-family: 'Teko', sans-serif;
+font-family: 'Montserrat', sans-serif;
