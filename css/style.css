@@ -656,6 +656,9 @@ body {
 
 /********************************/
 /***********Продукти*************/
+.products-wrapper {
+  position: relative; }
+
 .products-wrapper-header {
   text-align: center; }
 
@@ -670,7 +673,7 @@ body {
   margin-top: 60px; }
   @media screen and (max-width: 950px) {
     .products-wrapper__title {
-      margin-bottom: 39px; } }
+      margin-bottom: 110px; } }
 
 .products-wrapper__nav {
   display: -webkit-box;
@@ -684,6 +687,9 @@ body {
   @media screen and (max-width: 950px) {
     .products-wrapper__nav {
       margin-bottom: 60px; } }
+  @media screen and (max-width: 950px) {
+    .products-wrapper__nav {
+      display: none; } }
 
 .products-wrapper__nav::after {
   content: '';
@@ -723,6 +729,41 @@ body {
 
 .products-wrapper__link:active {
   color: #0077ff; }
+
+.products-select-container {
+  display: none; }
+  @media screen and (max-width: 950px) {
+    .products-select-container {
+      display: block;
+      position: absolute;
+      width: 80%;
+      top: 80px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); } }
+
+.products-select {
+  width: 80%;
+  background-color: #f1f1f1;
+  color: #262626;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  line-height: 24.75px;
+  font-size: 20px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+  outline: none;
+  border: none; }
+
+.products-select__item {
+  background-color: #262626;
+  color: #f1f1f1;
+  font-size: 18px; }
 
 .products-wrapper-body {
   display: -webkit-box;
