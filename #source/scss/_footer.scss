@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .footer__column {
     max-width: 250px;
     padding-bottom: 60px;
@@ -72,7 +73,7 @@
 .social__item:hover{
     background-color: #053bb9;
 }
-
+/**************/
 .copyright {
     max-width: 1310px;
     margin: 0 auto;
@@ -94,10 +95,13 @@
 }
 .copyright__links-item a{
     color: #b2b2b2;
-
     font-size: 19px;
     font-weight: 600;
     line-height: 1.7;
+}
+.copyright__links-item a:hover{
+    color: #004cff;
+
 }
 .copyright__text {
     color: #b2b2b2;
@@ -106,4 +110,77 @@
     line-height: 1.7;
 
 }
+@media screen and (max-width: 1350px) {
+    .copyright{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .footer__row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__column{
+        max-width: 1000px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .footer__group{
+        text-align: center;
+    }
+    .footer__title{
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+    .social{
+        justify-content: center;
+    }
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .footer__cards{
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width: 950px) {
+    .copyright{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .copyright__links-item a{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .copyright__text {
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+@media screen and (max-width: 390px) {
+    .copyright{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .copyright__row{
+        flex-direction: row;
+        text-align: center;
+    }
+    .copyright__links{
+        flex-direction: column;
+    }
+    .copyright__links-item a{
+        font-size: 12px;
+    }
+    .copyright__text {
+        font-size: 12px;
+    }
+}
+
 /********************************/

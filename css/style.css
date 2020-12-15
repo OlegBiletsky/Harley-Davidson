@@ -1332,6 +1332,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 .social__item:hover {
   background-color: #053bb9; }
 
+/**************/
 .copyright {
   max-width: 1310px;
   margin: 0 auto;
@@ -1364,11 +1365,89 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   font-weight: 600;
   line-height: 1.7; }
 
+.copyright__links-item a:hover {
+  color: #004cff; }
+
 .copyright__text {
   color: #b2b2b2;
   font-size: 19px;
   font-weight: 600;
   line-height: 1.7; }
+
+@media screen and (max-width: 1350px) {
+  .copyright {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media screen and (max-width: 1000px) {
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__column {
+    max-width: 1000px;
+    padding-bottom: 20px;
+    text-align: center; }
+  .footer__group {
+    text-align: center; }
+  .footer__title {
+    margin-top: 5px;
+    margin-bottom: 8px; }
+  .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .footer__logo {
+    display: none; }
+  .footer__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media screen and (max-width: 950px) {
+  .copyright {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .copyright__links-item a {
+    font-size: 15px;
+    font-weight: normal; }
+  .copyright__text {
+    font-size: 15px;
+    font-weight: normal; } }
+
+@media screen and (max-width: 390px) {
+  .copyright {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .copyright__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center; }
+  .copyright__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .copyright__links-item a {
+    font-size: 12px; }
+  .copyright__text {
+    font-size: 12px; } }
 
 /********************************/
 /*# sourceMappingURL=style.css.map */
