@@ -6,6 +6,7 @@
 }
 
 .menu-wrap {
+    display: none;
     @media screen and (max-width: 980px) {
         display: block;
         position: fixed;

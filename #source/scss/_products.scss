@@ -60,6 +60,9 @@
 .products-wrapper__link:active{
     color: #0077ff;
 }
+.products-wrapper__link_active{
+    color: #0077ff;
+}
 .products-select-container{
     display: none;
     @media screen and (max-width: 950px) {
@@ -121,7 +124,8 @@
     
 }
 .products-column:hover{
-    opacity: 0.6;
+    // border: #0077ff solid 3px;
+    outline: 5px solid #3583db;
 }
 .products-column__foto {
     padding: 48px 45px 79px 45px;
