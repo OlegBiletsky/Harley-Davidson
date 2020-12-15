@@ -65,6 +65,18 @@ body {
   background-color: #262626;
   color: #f8f8f8; }
 
+.container1 {
+  /*контейнер1 по ширині*/
+  max-width: 1090px;
+  margin: 0 auto;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.container2 {
+  max-width: 1350px;
+  margin: 0 auto; }
+
 /*--------------------*/
 /*******  TOP-PANEL **********/
 .top-panel {
@@ -77,14 +89,6 @@ body {
 
 .top-panel:hover {
   opacity: 1; }
-
-.container1 {
-  /*контейнер1 по ширині*/
-  max-width: 1090px;
-  margin: 0 auto;
-  height: 100%;
-  padding-left: 15px;
-  padding-right: 15px; }
 
 .top-panel__row {
   display: -webkit-box;
@@ -328,15 +332,13 @@ body {
   --overlay-color: #464a4dfa;
   --menu-speed: 0.75s; }
 
-.menu-wrap {
-  display: none; }
-  @media screen and (max-width: 980px) {
-    .menu-wrap {
-      display: block;
-      position: fixed;
-      top: 10px;
-      right: 70px;
-      z-index: 11; } }
+@media screen and (max-width: 980px) {
+  .menu-wrap {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 70px;
+    z-index: 11; } }
 
 .menu-wrap .toggler {
   position: absolute;
@@ -515,12 +517,9 @@ body {
 /**********************************************/
 /********  Top-sales 1 ********/
 .top-sales {
+  display: none;
   padding-top: 44px;
   padding-bottom: 30px; }
-
-.container2 {
-  max-width: 1350px;
-  margin: 0 auto; }
 
 .top-sales__row {
   display: -webkit-box;
@@ -1299,6 +1298,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 .footer__text p {
   margin-bottom: 25px; }
 
+/**************/
 .social {
   padding-top: -10px;
   display: -webkit-box;
@@ -1357,13 +1357,25 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
           justify-content: space-between; }
 
 .copyright__links-item {
-  margin-right: 44px; }
+  color: #b2b2b2;
+  margin-right: 44px;
+  color: #f1f1f1;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 24.75px;
+  margin-right: 45px;
+  -webkit-transition: opacity 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in; }
 
 .copyright__links-item a {
   color: #b2b2b2;
   font-size: 19px;
   font-weight: 600;
-  line-height: 1.7; }
+  line-height: 1.7;
+  text-decoration: none; }
 
 .copyright__links-item a:hover {
   color: #004cff; }

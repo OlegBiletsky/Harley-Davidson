@@ -21,6 +21,18 @@ body{
     background-color:rgb(38, 38, 38);
     color: #f8f8f8;
 }
+.container1{/*контейнер1 по ширині*/
+    max-width: 1090px;
+    margin: 0 auto;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.container2{
+    max-width: 1350px;
+    margin: 0 auto;
+}
 /*--------------------*/
 @import "_top-panel.scss";
 @import "_header.scss";

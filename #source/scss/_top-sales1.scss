@@ -1,5 +1,6 @@
 /********  Top-sales 1 ********/
 .top-sales{
+    display: none;
     padding-top: 44px;
     padding-bottom: 30px;
     @media screen and (max-width:740px){
@@ -7,10 +8,7 @@
     }
 }
 
-.container2{
-    max-width: 1350px;
-    margin: 0 auto;
-}
+
 
 .top-sales__row {
     display: flex;
