@@ -1,6 +1,6 @@
 /**************Footer************/
-.footer {
-    padding-top: 120px;
+.footer {   
+    margin-top: 70px;
     padding-bottom: 5px;
 }
 .footer__row {
@@ -30,6 +30,9 @@
 .footer-list {
     font-size: 18px;
     line-height: 1.5;
+}
+.footer ul li {
+    margin-bottom: 10px;
 }
 .footer-list__item {
     color: #f1f1f1;
@@ -167,12 +170,15 @@
         font-size: 15px;
         font-weight: normal;
     }
-    .copyright__text {
+    .copyright__text-link {
         font-size: 15px;
         font-weight: normal;
     }
 }
 @media screen and (max-width: 390px) {
+    .footer{
+        margin-top: 0;
+    }
     .copyright{
         padding-top: 5px;
         padding-bottom: 5px;
@@ -181,14 +187,12 @@
         flex-direction: row;
         text-align: center;
     }
-    .copyright__links{
-        flex-direction: column;
-    }
     .copyright__links-item a{
         font-size: 12px;
     }
-    .copyright__text {
+    .copyright__text-link {
         font-size: 12px;
+        margin-top: 5px;
     }
 }
 /********************************/
