@@ -1,4 +1,4 @@
-/*******    HEADER   ************/
+/****************HEADER***************/
 .header{
     height: 759px;
     width: 100%;
@@ -22,7 +22,6 @@
         justify-content: center;
     }
 }
-
 .header__logo {
     @media screen and (max-width: 490px) {
         display: none;
@@ -33,9 +32,8 @@
     @media screen and (max-width: 980px) {
         width: 80%;
     }
-
 }
-/*******************************************/
+/*****************/
 .header__nav{
     height: 100%;
     display: flex;
@@ -45,7 +43,7 @@
         display: none;
     }
 }
-/*****************************************/
+/*****************/
 .header__navlink {
     color: #404040;
     font-family: 'Teko', sans-serif;
