@@ -187,12 +187,16 @@
         flex-direction: row;
         text-align: center;
     }
+    .copyright__links {
+        margin-bottom: -10px;
+    }
     .copyright__links-item a{
         font-size: 12px;
     }
     .copyright__text-link {
         font-size: 12px;
         margin-top: 5px;
+        margin-bottom: -10px;
     }
 }
 /********************************/

@@ -1246,8 +1246,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   background: rgba(255, 255, 255, 0.8); }
 
 /*********************************************/
-/***********Gallery**************/
-/********************************/
 /**************Footer************/
 .footer {
   margin-top: 70px;
@@ -1468,11 +1466,14 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: center; }
+  .copyright__links {
+    margin-bottom: -10px; }
   .copyright__links-item a {
     font-size: 12px; }
   .copyright__text-link {
     font-size: 12px;
-    margin-top: 5px; } }
+    margin-top: 5px;
+    margin-bottom: -10px; } }
 
 /********************************/
 /*# sourceMappingURL=style.css.map */
