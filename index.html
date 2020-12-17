@@ -42,7 +42,7 @@
     <header class="header">
             <div class="container1">
 
-                <div class="header__nav-row">
+                <div class="header__nav-row" id="home">
 
                     <div class="header__logo">
                             <a href="#">
@@ -71,11 +71,11 @@
                             <div>
                                 <div>
                                     <ul>
-                                        <li><a href="#">HOME</a></li>
-                                        <li><a href="#">ABOUT US</a></li>
-                                        <li><a href="#">SHOP</a></li>
-                                        <li><a href="#">BLOG</a></li>
-                                        <li><a href="#">CONTACT</a></li>
+                                        <li><a href="#home">HOME</a></li>
+                                        <li><a href="#about">ABOUT US</a></li>
+                                        <li><a href="#shop">SHOP</a></li>
+                                        <li><a href="#blog">BLOG</a></li>
+                                        <li><a href="#contact">CONTACT</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
                     </div>
 
 
-                    <a href="#" class="header__button" id="home">Shopping now</a>
+                    <a href="#" class="header__button">Shopping now</a>
                 
                 </div>
 
@@ -157,9 +157,9 @@
             <div class="container1">
             <div class="products-wrapper">
 
-                <div class="products-wrapper-header" >
-                        <div class="products-wrapper__title">OUR PRODUCT</div>
-                        <nav class="products-wrapper__nav" id="shop">
+                <div class="products-wrapper-header">
+                        <div class="products-wrapper__title" id="shop">OUR PRODUCT</div>
+                        <nav class="products-wrapper__nav">
                         <ul class="products-wrapper__link">
                             <li class="products-wrapper__link products-wrapper__link_active"><a href="#" class="products-wrapper__link products-wrapper__link_active">Helmet</a></li>
 
@@ -171,7 +171,7 @@
                         </ul>
                         </nav>
                         <div class="products-select-container">     <!--for mobile -->
-                            <select class="products-select">
+                            <select class="products-select" >
                                 <option class="products-select__item">Helmet</option>
                                 <option class="products-select__item">Motorbike</option>
                                 <option class="products-select__item">Accessories</option>
@@ -367,7 +367,7 @@
 
 
 <!--*************************  FOOTER  ***********************************-->
-    <footer class="footer" id="contact">
+    <footer class="footer" >
 
         <!--* Footer Top *-->
         <div class="container1">
@@ -416,7 +416,7 @@
                     <img src="img/icons/footer-logo.png" alt="">
                 </div>
                 <div class="footer__text">
-                        <address>
+                        <address id="contact">
                             Street addresses: 445 Mount Eden Road, Mount Postcodes: 5022
                         </address>
                     </div>
