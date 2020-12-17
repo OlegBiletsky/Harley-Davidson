@@ -1,6 +1,17 @@
 /*****************Slider********************/
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+.gallery__item {
+    width: 33.33333333%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
 .gallery-slider{padding-bottom: 380px;}
 .slides {
     padding: 0;
