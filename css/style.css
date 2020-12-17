@@ -334,7 +334,7 @@ body {
 /************MENU HAMBURGER*************/
 :root {
   --primary-color: #262626;
-  --overlay-color: #464a4dfa;
+  --overlay-color: #000000;
   --menu-speed: 0.75s; }
 
 .menu-wrap {
