@@ -65,7 +65,7 @@
 
 
                     <div class="menu-wrap">
-                        <input type="checkbox" class="toggler">
+                        <input type="checkbox" class="toggler" id="toggler" onchange="ToggleScroll()">
                         <div class="hamburger"><div></div></div>
                         <div class="menu">
                             <div>
@@ -83,13 +83,13 @@
                     </div>
 
 
-                    <a href="#" class="header__button">Shopping now</a>
+                    <a href="#shop" class="header__button">Shopping now</a>
                 
                 </div>
 
                 <div class="header__promo">
                     <div class="header__title">safe and cool motorcyclist</div>
-                    <a href="#" class="header__promo-btn" >DISCOVER NOW</a>
+                    <a href="#shop" class="header__promo-btn" >DISCOVER NOW</a>
                 </div>
                     
             </div>
@@ -383,32 +383,32 @@
                 <div class="footer__group">
                     <h4 class="footer__title" id="blog">Follow us</h4>
                     <div class="social">
-                        <a href="#" class="social__item"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social__item"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social__item"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social__item"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com" class="social__item" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" class="social__item" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" class="social__item" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com" class="social__item" target="blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer__column">
                 <h4 class="footer__title">Information</h4>
                 <ul class="footer-list">
-                    <li> <a href="#" class="footer-list__item">Profile</a></li>
-                    <li> <a href="#" class="footer-list__item">About us</a></li>
-                    <li> <a href="#" class="footer-list__item">Contact</a></li>
-                    <li> <a href="#" class="footer-list__item">Address</a></li>
-                    <li> <a href="#" class="footer-list__item">Return Policy</a></li>
+                    <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">Profile</a></li>
+                    <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">About us</a></li>
+                    <li> <a href="#https://www.google.com/" target="blank"class="footer-list__item">Contact</a></li>
+                    <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">Address</a></li>
+                    <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">Return Policy</a></li>
                 </ul>
             </div>
 
             <div class="footer__column">
                 <h4 class="footer__title">Returns</h4>
                 <ul class="footer-list">
-                    <li><a href="#" class="footer-list__item">FAQs</a></li>
-                    <li><a href="#" class="footer-list__item">Size Guide</a></li>
-                    <li><a href="#" class="footer-list__item">Contact us</a></li>
-                    <li><a href="#" class="footer-list__item">Sell with Us</a></li>
-                    <li><a href="#" class="footer-list__item">Sitemap</a></li>
+                    <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">FAQs</a></li>
+                    <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">Size Guide</a></li>
+                    <li><a href="#https://www.google.com/" target="blank"class="footer-list__item">Contact us</a></li>
+                    <li><a href="#https://www.google.com/" target="blank"class="footer-list__item">Sell with Us</a></li>
+                    <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">Sitemap</a></li>
                 </ul>
             </div>
             <div class="footer__column">
@@ -439,10 +439,10 @@
 
                     <ul class="copyright__links">
                         <li class="copyright__links-item">
-                            <a href="#">Status</a>
+                            <a href="https://www.linkedin.com/in/olegbiletsky/" target="blank">Developed by Oleg Biletsky</a>
                         </li>
                         <li class="copyright__links-item">
-                            <a href="#">Contact Us</a>
+                            <a href="https://github.com/OlegBiletsky/Harley-Davidson" target="blank">source code</a>
                         </li>
                     </ul>
                     
@@ -455,6 +455,19 @@
 
     </footer>
 <!--**********************************************************************-->
+
+<script>
+    let bodyElement = document.body;
+    let togglerElement = document.getElementById('toggler');
+
+    function ToggleScroll() {
+        if (bodyElement.style.overflow === "hidden") {
+                bodyElement.style.overflow = "auto"
+        } else {
+            bodyElement.style.overflow = "hidden"
+        }
+    }
+</script>
 
 </body>
 </html>

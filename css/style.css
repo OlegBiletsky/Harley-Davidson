@@ -66,7 +66,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: #262626;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  overflow: auto; }
 
 .container1 {
   /*контейнер1 по ширині*/
@@ -334,7 +335,7 @@ body {
 /************MENU HAMBURGER*************/
 :root {
   --primary-color: #262626;
-  --overlay-color: #000000;
+  --overlay-color: #0000005c;
   --menu-speed: 0.75s; }
 
 .menu-wrap {
@@ -1273,7 +1274,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   font-size: 25px;
   font-weight: 600;
   line-height: 30px;
-  color: #004cff; }
+  color: #0077ff; }
 
 .footer__text {
   font-size: 18px;
@@ -1293,7 +1294,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   font-weight: 600; }
 
 .footer-list__item:hover {
-  color: #053bb9; }
+  color: #0077ff; }
 
 .footer__logo {
   margin-top: 35px;
@@ -1373,7 +1374,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   margin-right: 44px;
   color: #f1f1f1;
   font-family: 'Montserrat',sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 21px;
   font-weight: 400;
   line-height: 24.75px;
@@ -1385,22 +1386,21 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 .copyright__links-item a {
   color: #b2b2b2;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.7;
   text-decoration: none; }
 
 .copyright__links-item a:hover {
-  color: #004cff; }
+  color: #ffffff; }
 
 .copyright__text-link {
   color: #b2b2b2;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.7; }
 
 .copyright__text-link:hover {
-  color: #004cff;
-  text-decoration: underline; }
+  color: #ffffff; }
 
 @media screen and (max-width: 1350px) {
   .copyright {
