@@ -20,7 +20,6 @@
     font-weight: 600;
     line-height: 30px;
     color: #0077ff;
-    
 }
 .footer__text {
     font-size: 18px;
@@ -146,9 +145,6 @@
         margin-top: 5px;
         margin-bottom: 8px;
     }
-    .social{
-        justify-content: center;
-    }
     .footer-list{
         display: flex;
         flex-direction: column;
@@ -159,6 +155,14 @@
     }
     .footer__cards{
         justify-content: center;
+    }
+    .social{
+        justify-content: center;
+    }
+    .social__item {
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
     }
 }
 @media screen and (max-width: 950px) {
@@ -178,6 +182,9 @@
 @media screen and (max-width: 390px) {
     .footer{
         margin-top: 0;
+    }
+    .footer__text address {
+        margin-bottom: 15px;
     }
     .copyright{
         padding-top: 5px;
