@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Teko:400,500,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css   
-    ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Two wheels freaks</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -21,7 +22,8 @@
 
 <!--*************************** Top-panel ********************************-->
     <section class="top-panel">
-        <div class="container1"> <!--max-width 1090px-->
+        <!--max-width 1090px-->
+        <div class="container1">
             <div class="top-panel__row">
                 <a href="#" class="top-panel__notification">Free Delivery: Take advantage of our time to save event.</a>
                 <a href="#" class="top-panel__notification-icon">
@@ -43,15 +45,11 @@
             <div class="container1">
 
                 <div class="header__nav-row" id="home">
-
                     <div class="header__logo">
                             <a href="#">
                                 <img src="img/icons/logo.svg" class="main-logo" alt="Logo">
                             </a>
                     </div>
-
-
-                    
                     <nav class="header__nav">
                     <ul class="header__nav">
                             <li><a class="header__navlink" href="#home">HOME</a></li>
@@ -61,10 +59,8 @@
                             <li> <a class="header__navlink header__navlink_last" href="#contact">CONTACT</a></li>
                     </ul>
                     </nav>
-
-
-
                     <div class="menu-wrap">
+                        <!-- when input is changing, body scroll is disable -->
                         <input type="checkbox" class="toggler" id="toggler" onchange="ToggleScroll()">
                         <div class="hamburger"><div></div></div>
                         <div class="menu">
@@ -81,14 +77,10 @@
                             </div>
                         </div>
                     </div>
-
-
                     <a href="#shop" class="header__button">Shopping now</a>
-                
                 </div>
-
                 <div class="header__promo">
-                    <div class="header__title">safe and cool motorcyclist</div>
+                    <h1 class="header__title">safe and cool motorcyclist</h1>
                     <a href="#shop" class="header__promo-btn" >DISCOVER NOW</a>
                 </div>
                     
@@ -99,10 +91,10 @@
 
 <!--************************ Top-sales ***********************************-->
     <section class="top-sales">
+        <!--max-width 1350px-->
         <div class="container2">
 
-
-            <!-- Ряд 1 -->
+            <!-- row 1 -->
             <div class="top-sales__row">
                 <!-- sale 1 -->
                 <div class="sales sales--wide">
@@ -124,6 +116,7 @@
                 <!-- // sale 2 -->
             </div>
 
+            <!-- row 2 -->
             <div class="top-sales__row">
                 <!-- sale 3 -->
                 <div class="sales">
@@ -145,44 +138,46 @@
                 <!-- // sale 4 -->
             </div>
         
-
-
         </div>
-    </section >
+    </section>
 <!--**********************************************************************-->
 
 
 <!--*************************  Products  *********************************-->
     <section class="products">
-            <div class="container1">
+        <div class="container1">
+
             <div class="products-wrapper">
-
                 <div class="products-wrapper-header">
-                        <div class="products-wrapper__title" id="shop">OUR PRODUCT</div>
-                        <nav class="products-wrapper__nav">
+                    <h2 class="products-wrapper__title" id="shop">OUR PRODUCT</h2>
+                    <nav class="products-wrapper__nav">
                         <ul class="products-wrapper__link">
-                            <li class="products-wrapper__link products-wrapper__link_active"><a href="#" class="products-wrapper__link products-wrapper__link_active">Helmet</a></li>
-
-                            <li class="products-wrapper__link"><a href="#" class="products-wrapper__link">Motorbike</a></li>
-
-                            <li class="products-wrapper__link"><a href="#" class="products-wrapper__link">Accessories</a></li>
-
-                            <li class="products-wrapper__link"><a href="#" class="products-wrapper__link">Sale</a></li>
+                            <li class="products-wrapper__link products-wrapper__link_active">
+                                <a href="#" class="products-wrapper__link products-wrapper__link_active">Helmet</a>
+                            </li>
+                            <li class="products-wrapper__link">
+                                <a href="#" class="products-wrapper__link">Motorbike</a>
+                            </li>
+                            <li class="products-wrapper__link">
+                                <a href="#" class="products-wrapper__link">Accessories</a>
+                            </li>
+                            <li class="products-wrapper__link">
+                                <a href="#" class="products-wrapper__link">Sale</a>
+                            </li>
                         </ul>
-                        </nav>
-                        <div class="products-select-container">     <!--for mobile -->
-                            <select class="products-select" >
-                                <option class="products-select__item">Helmet</option>
-                                <option class="products-select__item">Motorbike</option>
-                                <option class="products-select__item">Accessories</option>
-                                <option class="products-select__item">Sale</option>
-                            </select>
-                        </div>
+                    </nav>
+                    <!--for mobile -- 650px -->
+                    <div class="products-select-container">
+                        <select class="products-select" >
+                            <option class="products-select__item">Helmet</option>
+                            <option class="products-select__item">Motorbike</option>
+                            <option class="products-select__item">Accessories</option>
+                            <option class="products-select__item">Sale</option>
+                        </select>
+                    </div>
                 </div>
                 
-
                 <div class="products-wrapper-body">
-
                     <a href="#" class="products-column">
                         <div class="products-column__foto">
                             <img src="img/helmet1.jpg" alt="Helmet1">
@@ -190,7 +185,6 @@
                         <div class="products-column__notification">Sample Product For You</div>
                         <div class="products-column__price">$250.00</div>
                     </a>
-
                     <a href="#" class="products-column">
                         <div class="products-column__foto">
                             <img src="img/helmet2.jpg" alt="Helmet2">
@@ -198,7 +192,6 @@
                         <div class="products-column__notification">Sample Product For You</div>
                         <div class="products-column__price">$300.00</div> 
                     </a>
-
                     <a href="#" class="products-column">
                         <div class="products-column__foto">
                             <img src="img/helmet3.jpg" alt="Helmet3">
@@ -206,15 +199,10 @@
                         <div class="products-column__notification">Sample Product For You</div>
                         <div class="products-column__price">$200.00</div>
                     </a>
-
-                    
-
-
                 </div>
-
-
             </div>
-            </div>
+
+        </div>
     </section>
 <!--**********************************************************************-->
 
@@ -224,17 +212,14 @@
         <div class="container2">
         
             <div class="subscribe">
-
                 <img class="subscribe-img" src="img/header-bg2.jpg" alt="">
-
                 <div class="subscribe-overlay">
-                        <div class="subscribe_title">SAVE UP TO 75%</div>
-                        <form action="#" class="subscribe-form" validate>
-                            <input class="subscribe-input" type="email"  size="40" placeholder="Your email address" >
-                            <input class="subscribe-button" type="submit" value="Submit" name="#" >
-                        </form>
+                    <h2 class="subscribe_title">SAVE UP TO 75%</h2>
+                    <form action="#" class="subscribe-form" autocomplete="on">
+                        <input class="subscribe-input" type="email" size="40" placeholder="Your email address" required>
+                        <input class="subscribe-button" type="submit" value="Submit" name="#">
+                    </form>
                 </div>
-
             </div>
 
         </div>
@@ -245,49 +230,48 @@
 <!--************************ Services ************************************-->
     <section class="section-service" id="about">
         <div class="container1">
-                <div class="section-service__row">
 
-                        <div class="service-block">
-                            <img class="service-block__icon" src="img/icons/service-1.svg" alt="">
-                            <div class="service-block__description">
-                                <div class="service-block__title">Free Shipping Worldwide</div>
-                                <div class="service-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                            </div>
-                        </div>
-                        
-                    
-                        <div class="service-block">
-                            <img class="service-block__icon" src="img/icons/service-2.svg" alt="">
-                            <div class="service-block__description">
-                                <div class="service-block__title">Money Back Guarantee</div>
-                                <div class="service-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                            </div>
-                        </div>
-
-                        <div class="service-block">
-                            <img class="service-block__icon" src="img/icons/service-3.svg" alt="">
-                            <div class="service-block__description">
-                                <div class="service-block__title">24/7 Help Center</div>
-                                <div class="service-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                            </div>
-                        </div>
-
+            <div class="section-service__row">
+                <div class="service-block">
+                    <img class="service-block__icon" src="img/icons/service-1.svg" alt="">
+                    <div class="service-block__description">
+                        <h4 class="service-block__title">Free Shipping Worldwide</h4>
+                        <div class="service-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                    </div>
                 </div>
+                <div class="service-block">
+                    <img class="service-block__icon" src="img/icons/service-2.svg" alt="">
+                    <div class="service-block__description">
+                        <h4 class="service-block__title">Money Back Guarantee</h4>
+                        <div class="service-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                    </div>
+                </div>
+                <div class="service-block">
+                    <img class="service-block__icon" src="img/icons/service-3.svg" alt="">
+                    <div class="service-block__description">
+                        <h4 class="service-block__title">24/7 Help Center</h4>
+                        <div class="service-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
 <!--**********************************************************************-->
 
 
-<!--************************** Galery ************************************-->
-    <section class="gallery-slider">
+<!--************************* Gallery Slider *****************************-->
+<!-- gallery slider -->
+<section class="gallery-slider">
         <ul class="slides">
 
+            <!-- input use for click -->
             <input type="radio" name="radio-btn" id="img-1" checked />
             <li class="slide-container">
                 <div class="slide">
-                    <img src="img/slider/gallery-1.jpg" />
+                    <img src="img/slider/gallery-1.jpg" alt="image-1"/>
                 </div>
+                <!-- next and previous arrows-->
                 <div class="nav">
                     <label for="img-6" class="prev">&#x2039;</label>
                     <label for="img-2" class="next">&#x203a;</label>
@@ -297,7 +281,7 @@
             <input type="radio" name="radio-btn" id="img-2" />
             <li class="slide-container">
                 <div class="slide">
-                <img src="img/slider/gallery-2.jpg" />
+                    <img src="img/slider/gallery-2.jpg" alt="image-2"/>
                 </div>
                 <div class="nav">
                     <label for="img-1" class="prev">&#x2039;</label>
@@ -308,7 +292,7 @@
             <input type="radio" name="radio-btn" id="img-3" />
             <li class="slide-container">
                 <div class="slide">
-                <img src="img/slider/gallery-3.jpg" />
+                    <img src="img/slider/gallery-3.jpg" alt="image-3"/>
                 </div>
                 <div class="nav">
                     <label for="img-2" class="prev">&#x2039;</label>
@@ -319,7 +303,7 @@
             <input type="radio" name="radio-btn" id="img-4" />
             <li class="slide-container">
                 <div class="slide">
-                <img src="img/slider/gallery-4.jpg" />
+                    <img src="img/slider/gallery-4.jpg" alt="image-4"/>
                 </div>
                 <div class="nav">
                     <label for="img-3" class="prev">&#x2039;</label>
@@ -330,7 +314,7 @@
             <input type="radio" name="radio-btn" id="img-5" />
             <li class="slide-container">
                 <div class="slide">
-                <img src="img/slider/gallery-5.jpg" />
+                    <img src="img/slider/gallery-5.jpg" alt="image-5"/>
                 </div>
                 <div class="nav">
                     <label for="img-4" class="prev">&#x2039;</label>
@@ -341,7 +325,7 @@
             <input type="radio" name="radio-btn" id="img-6" />
             <li class="slide-container">
                 <div class="slide">
-                <img src="img/slider/gallery-6.jpg" />
+                    <img src="img/slider/gallery-6.jpg" alt="image-6"/>
                 </div>
                 <div class="nav">
                     <label for="img-5" class="prev">&#x2039;</label>
@@ -349,7 +333,7 @@
                 </div>
             </li>
 
-
+            <!-- navigation dots for gallery -->
             <li class="nav-dots">
             <label for="img-1" class="nav-dot" id="img-dot-1"></label>
             <label for="img-2" class="nav-dot" id="img-dot-2"></label>
@@ -366,14 +350,14 @@
 
 <!--*************************  FOOTER  ***********************************-->
     <footer class="footer" >
+    <div class="container1">
 
-        <!--* Footer Top *-->
-        <div class="container1">
+        <!-- Footer Top -->
         <div class="footer__row">
 
             <div class="footer__column">
                 <div class="footer__group">
-                    <div class="footer__title">About us</div>
+                    <h4 class="footer__title">About us</h4>
                     <div class="footer__text">
                         <p>The new hero pieces bring instant fashion credibility. Bright florals clash with camouflage.</p>
                     </div>
@@ -393,7 +377,7 @@
                 <ul class="footer-list">
                     <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">Profile</a></li>
                     <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">About us</a></li>
-                    <li> <a href="#https://www.google.com/" target="blank"class="footer-list__item">Contact</a></li>
+                    <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">Contact</a></li>
                     <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">Address</a></li>
                     <li> <a href="#https://www.google.com/" target="blank" class="footer-list__item">Return Policy</a></li>
                 </ul>
@@ -404,8 +388,8 @@
                 <ul class="footer-list">
                     <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">FAQs</a></li>
                     <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">Size Guide</a></li>
-                    <li><a href="#https://www.google.com/" target="blank"class="footer-list__item">Contact us</a></li>
-                    <li><a href="#https://www.google.com/" target="blank"class="footer-list__item">Sell with Us</a></li>
+                    <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">Contact us</a></li>
+                    <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">Sell with Us</a></li>
                     <li><a href="#https://www.google.com/" target="blank" class="footer-list__item">Sitemap</a></li>
                 </ul>
             </div>
@@ -426,11 +410,9 @@
             </div>
         
         </div>
-        </div>
-
-        <!--**-->
+        <!----->
     
-         <!--* Footer Bottom *-->
+         <!-- Footer Bottom -->
         <div class="copyright">
             <div class="container">
                 <div class="copyright__row">
@@ -444,25 +426,29 @@
                         </li>
                     </ul>
                     
-                    <div href="https://github.com/OlegBiletsky/Harley-Davidson" class="copyright__text-link" target="blank">© 2020</div>
+                    <h5 class="copyright__text-link"><i class="far fa-copyright"></i> 2020</h5>
                     
                 </div>
             </div>
         </div>
-        <!--**-->
+        <!----->
 
+    <div>
     </footer>
 <!--**********************************************************************-->
 <!--****************  JS for disabling scroll in mobile  *****************-->
 <script>
+    // select body
     let bodyElement = document.body;
+    // select menu toggler
     let togglerElement = document.getElementById('toggler');
 
+    // function which toggle overflow for body
     function ToggleScroll() {
         if (bodyElement.style.overflow === "hidden") {
-                bodyElement.style.overflow = "auto"
+                bodyElement.style.overflow = "auto"// scroll ON
         } else {
-            bodyElement.style.overflow = "hidden"
+            bodyElement.style.overflow = "hidden"//scroll OFF
         }
     }
 </script>
